@@ -1,22 +1,73 @@
-        .navbar-brand img {
-            border-radius: 4px;
-        }
-        .navbar-nav .nav-link {
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-        }
-        .navbar-nav .nav-link.active {
-            color: #925f99;
-        }
-        @media (max-width: 991.98px) {
-            .navbar-collapse {
-                padding-top: 1rem;
-            }
-            .navbar-nav .nav-item {
-                margin-bottom: 0.5rem;
-            }
-            .d-flex {
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
-        }
+.navbar-brand img {
+    border-radius: 4px;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+.navbar-nav .nav-link.active {
+    color: #925f99;
+}
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+    .d-flex {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+
+/* style.css */
+
+/* 1. Etiqueta meta viewport para el escalado */
+/* (Ya incluida en el HTML) */
+
+/* 2. Estilos básicos para el contenido */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Ancho relativo al 90% del contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centra el contenido */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 3. Imágenes responsivas */
+.responsive-img {
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+    height: auto;    /* La altura se ajusta automáticamente */
+    display: block;  /* Elimina espacio extra debajo de la imagen */
+}
+
+/* 4. Texto responsive (ejemplo con vw) */
+h1 {
+    font-size: 5vw; /* Tamaño de fuente basado en el 5% del ancho del viewport */
+}
+
+/* 5. Media Queries para puntos de ruptura */
+@media (max-width: 768px) { /* Para pantallas de tabletas y más pequeñas */
+    h1 {
+        font-size: 3rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .content-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) { /* Para pantallas de móvil */
+    .container {
+        width: 100%; /* Ancho completo en móviles */
+        padding: 10px;
+    }
+}
