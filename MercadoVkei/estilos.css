@@ -1,0 +1,22 @@
+        .navbar-brand img {
+            border-radius: 4px;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+        .navbar-nav .nav-link.active {
+            color: #925f99;
+        }
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                padding-top: 1rem;
+            }
+            .navbar-nav .nav-item {
+                margin-bottom: 0.5rem;
+            }
+            .d-flex {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
