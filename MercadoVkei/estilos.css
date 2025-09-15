@@ -348,10 +348,7 @@ footer {
   height: 100%;
   background-color: rgba(0,0,0,0.4); /* opacidad ajustable */
   z-index: 1;}
-/* EDICION DE SCROLLBARS (page-wide)*/
-::-webkit-scrollbar {
-    width: 10px;
-}
+
 
 /* Texto por encima de la imagen */
 .header-con-imagen .header-texto {
@@ -386,14 +383,8 @@ footer {
   text-align: center;
   padding: 40px;
   border-radius: 12px;}
-/* SCROLLBARS DE CONTENEDOR PAGINA NOSOTROS */
-.contenedor-principal {
-    scrollbar-width: thin;
-    scrollbar-color: #2c3e50 #f3ccec;
-    max-height: 100vh; /* Ajusta según necesites */
-    overflow-y: auto;
-    padding-right: 5px;
-}
+
+
 
 .hero-overlay h1 {
   font-size: 2.5rem;
@@ -415,9 +406,6 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-.contenedor-principal::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #1a252f 0%, #0a0e12 100%);
 }
 
 /*PAGINA PRODUCTOS*/
