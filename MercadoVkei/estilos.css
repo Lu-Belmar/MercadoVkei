@@ -74,21 +74,6 @@ body {
     }
 }
 
-/* Content styling */
-.content-section {
-    padding: 3rem 0;
-}
-
-.content-card {
-    background: white;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-}
-
-
-
 /*BOTONES DE INGRESO Y REGISTRO*/
 .btn-sign-in {
     color: #fcfcfc !important;
@@ -118,6 +103,21 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+
+/*EDICION DE TARJETAS PAGINA PRINCIPAL*/
+.content-section {
+    padding: 3rem 0;
+}
+
+.content-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+/**/
 .btn-mercado  {
     background-color: #925f99;
     color: white;
