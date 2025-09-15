@@ -148,13 +148,14 @@ footer {
 /* Estilos del cuadro responsivo */
 .cuadro {
     width: 100%;
-    max-width: 900px;
+    min-height: 100vh;
     background-color: #f3ccec;
     box-shadow: 0 0 20px 5px #925f99;
     border-radius: 12px;
     padding: 30px;
     overflow: auto;
-    max-height: 90vh;
+    position: relative;
+    box-sizing: border-box;
 }
 
 /* Estilos para el contenido de Nosotros */
@@ -310,57 +311,4 @@ footer {
         width: 100px;
         height: 100px;
     }
-}
-/* Scrollbar elegante con gradiente */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
-    border-radius: 10px;
-    border: 2px solid #e9ecef;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #1a252f 0%, #0a0e12 100%);
-}
-
-html {
-    scrollbar-width: thin;
-    scrollbar-color: #2c3e50 #e9ecef;
-}
-
-/* Scrollbar elegante para el contenedor principal */
-.contenedor-principal {
-    scrollbar-width: thin;
-    scrollbar-color: #2c3e50 #f3ccec;
-    max-height: 100vh; /* Ajusta según necesites */
-    overflow-y: auto;
-    padding-right: 5px;
-}
-
-.contenedor-principal::-webkit-scrollbar {
-    width: 10px;
-}
-
-.contenedor-principal::-webkit-scrollbar-track {
-    background: #e9ecef;
-    border-radius: 10px;
-    margin: 10px 0;
-}
-
-.contenedor-principal::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
-    border-radius: 10px;
-    border: 2px solid #e9ecef;
-}
-
-.contenedor-principal::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #1a252f 0%, #0a0e12 100%);
 }
