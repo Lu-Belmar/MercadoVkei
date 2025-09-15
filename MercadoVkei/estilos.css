@@ -1,3 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/*EMPIEZA LA EDICION DE CAROUSEL*/
+#carouselExampleIndicators {
+    height: 80vh; 
+    overflow: hidden;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/*EMPIEZA LA EDICION DE NAVBAR*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #bf93d1 !important;
+    z-index: 1030;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #925f99 !important; 
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .navbar-brand img {
     border-radius: 4px;
 }
@@ -21,52 +74,6 @@
     }
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-}
-
-#carouselExampleIndicators {
-    height: 80vh; /* 60% of viewport height */
-    overflow: hidden;
-    margin: 2rem auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.carousel-inner, .carousel-item {
-    height: 100%;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This crops the image instead of stretching */
-}
-
-/* Custom color with hover effects */
-.navbar {
-    background-color: #8e44ad !important; /* Purple */
-}
-
-.navbar-brand, .navbar-nav .nav-link {
-    color: white !important;
-    transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #925f99 !important; /* Yellow on hover */
-    transform: translateY(-2px);
-}
-
-.navbar-toggler {
-    border-color: rgba(255,255,255,0.5);
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 /* Content styling */
 .content-section {
     padding: 3rem 0;
@@ -80,7 +87,38 @@ body {
     margin-bottom: 2rem;
 }
 
-.btn-mercado {
+
+
+/*BOTONES DE INGRESO Y REGISTRO*/
+.btn-sign-in {
+    color: #fcfcfc !important;
+    background-color: #925f99 !important;
+    border-color: #925f99 !important;
+}
+
+.btn-sign-in:hover {
+    color: #353535 !important;
+    background-color: #f3ccec !important;
+    border-color: #f3ccec !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-register {
+    color: #ffffff !important;
+    background-color: #a06fa7 !important;
+    border-color: #a06fa7 !important;
+}
+
+.btn-register:hover {
+    color: #353535 !important;
+    background-color: #f3ccec !important;
+    border-color: #f3ccec !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-mercado  {
     background-color: #925f99;
     color: white;
     padding: 0.5rem 1.5rem;
@@ -96,7 +134,7 @@ body {
 }
 
 footer {
-    background-color: #ae7c9f;
+    background-color: #bf93d1;
     color: white;
     padding: 2rem 0;
     margin-top: 3rem;
@@ -277,4 +315,57 @@ footer {
         width: 100px;
         height: 100px;
     }
+}
+/* Scrollbar elegante con gradiente */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #1a252f 0%, #0a0e12 100%);
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #2c3e50 #e9ecef;
+}
+
+/* Scrollbar elegante para el contenedor principal */
+.contenedor-principal {
+    scrollbar-width: thin;
+    scrollbar-color: #2c3e50 #f3ccec;
+    max-height: 100vh; /* Ajusta según necesites */
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.contenedor-principal::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contenedor-principal::-webkit-scrollbar-track {
+    background: #e9ecef;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.contenedor-principal::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+}
+
+.contenedor-principal::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #1a252f 0%, #0a0e12 100%);
 }
