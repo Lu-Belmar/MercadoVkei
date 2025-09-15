@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed Responsive Navbar</title>
-    <!-- Using consistent Bootstrap version -->
+    <title>MercadoVkei - Carousel Fixed</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -55,23 +54,70 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <div class="alert alert-info">
-            <h4>Navbar Fixed Successfully!</h4>
-            <p>Resize your browser window to see the responsive navbar in action. The collapse functionality should now work properly.</p>
+    <!-- Carousel with fixed ratio -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://energeek.cl/wp-content/uploads/2025/08/Screenshot_2.webp" class="d-block w-100" alt="Productos destacados">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://laarcadiadeurias.com/wp-content/uploads/2010/07/tetsuera.jpg" class="d-block w-100" alt="Nueva colección">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i1.sndcdn.com/avatars-QHIzUXQC0XLoUqff-KKu6rA-t1080x1080.jpg" class="d-block w-100" alt="Ofertas especiales">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        
-        <h2>Key Changes Made:</h2>
-        <ul>
-            <li>Used consistent Bootstrap 5.3.2 for both CSS and JS</li>
-            <li>Added a container for proper spacing</li>
-            <li>Fixed the dropdown accessibility attributes</li>
-            <li>Added text next to logo for better branding</li>
-            <li>Improved styling for mobile view</li>
-        </ul>
     </div>
 
-    <!-- Using same Bootstrap version for JS -->
+    <!-- Additional content -->
+    <div class="container content-section">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content-card text-center">
+                    <h3>Productos Destacados</h3>
+                    <p>Descubre nuestros artículos más populares de visual kei y J-rock.</p>
+                    <a href="productos.html" class="btn-mercado">Ver productos</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-card text-center">
+                    <h3>Novedades</h3>
+                    <p>Mantente al día con las últimas tendencias y lanzamientos.</p>
+                    <a href="blog.html" class="btn-mercado">Leer blog</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-card text-center">
+                    <h3>Ofertas Especiales</h3>
+                    <p>Aprovecha nuestros descuentos y promociones exclusivas.</p>
+                    <a href="productos.html" class="btn-mercado">Ver ofertas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2023 MercadoVkei - Todos los derechos reservados</p>
+            <p>Specializing in visual kei and J-rock merchandise</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
