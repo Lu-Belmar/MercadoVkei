@@ -25,12 +25,7 @@ body {
 
 /*EMPIEZA LA EDICION DE NAVBAR*/
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background-color: #bf93d1 !important;
-    z-index: 1030;
 }
 
 .navbar-brand, .navbar-nav .nav-link {
