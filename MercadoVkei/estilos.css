@@ -90,74 +90,22 @@
             margin-top: 3rem;
         }
 
-/* Custom color with hover effects */
-.navbar {
-    background-color: #f3ccec !important; /* Purple */
-}
-
-.navbar-brand, .navbar-nav .nav-link {
-    color: rgb(85, 85, 85) !important;
-    transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #56388e !important; /* Yellow on hover */
-    transform: translateY(-2px);
-}
-
-.navbar-toggler {
-    border-color: rgba(255,255,255,0.5);
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-/* style.css */
-
-/* 1. Etiqueta meta viewport para el escalado */
-/* (Ya incluida en el HTML) */
-
-/* 2. Estilos básicos para el contenido */
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 90%; /* Ancho relativo al 90% del contenedor */
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Centra el contenido */
+/* Contenedor principal para centrar */
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 76px); /* Altura total menos la altura de la navbar */
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* 3. Imágenes responsivas */
-.responsive-img {
-    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
-    height: auto;    /* La altura se ajusta automáticamente */
-    display: block;  /* Elimina espacio extra debajo de la imagen */
-}
-
-/* 4. Texto responsive (ejemplo con vw) */
-h1 {
-    font-size: 5vw; /* Tamaño de fuente basado en el 5% del ancho del viewport */
-}
-
-/* 5. Media Queries para puntos de ruptura */
-@media (max-width: 768px) { /* Para pantallas de tabletas y más pequeñas */
-    h1 {
-        font-size: 3rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-    }
-
-    .content-box {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) { /* Para pantallas de móvil */
-    .container {
-        width: 100%; /* Ancho completo en móviles */
-        padding: 10px;
-    }
+/* Estilos del cuadro responsivo */
+.cuadro {
+    width: 100%;
+    max-width: 900px; /* Tamaño máximo en pantallas grandes */
+    aspect-ratio: 1 / 1; /* Mantener relación cuadrada */
+    background-color: #f3ccec;
+    box-shadow: 0 0 20px 5px #925f99;
+    border-radius: 8px; /* Bordes redondeados opcionales */
 }
