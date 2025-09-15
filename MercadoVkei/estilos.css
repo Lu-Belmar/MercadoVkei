@@ -25,6 +25,7 @@ body {
 
 /*EMPIEZA LA EDICION DE NAVBAR*/
 .navbar {
+    position: relative;
     background-color: #bf93d1 !important;
 }
 
