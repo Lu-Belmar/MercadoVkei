@@ -1,111 +1,200 @@
-.navbar-brand img {
-    border-radius: 4px;
-}
-.navbar-nav .nav-link {
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-}
-.navbar-nav .nav-link.active {
-    color: #925f99;
-}
-@media (max-width: 991.98px) {
-    .navbar-collapse {
-        padding-top: 1rem;
-    }
-    .navbar-nav .nav-item {
-        margin-bottom: 0.5rem;
-    }
-    .d-flex {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-        }
-        
-        /* Fixed height carousel with cropped images */
-        #carouselExampleIndicators {
-            height: 80vh; /* 60% of viewport height */
-            overflow: hidden;
-            margin: 2rem auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        
-        .carousel-inner, .carousel-item {
-            height: 100%;
-        }
-        
-        .carousel-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* This crops the image instead of stretching */
-        }
-        
-        /* Custom navbar styling */
-        .navbar-brand {
-            font-weight: 700;
-            color: #925f99 !important;
-        }
-        
-        .navbar {
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        /* Content styling */
-        .content-section {
-            padding: 3rem 0;
-        }
-        
-        .content-card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-        
-        .btn-mercado {
-            background-color: #925f99;
-            color: white;
-            padding: 0.5rem 1.5rem;
+        .navbar-brand img {
             border-radius: 4px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
         }
-        
-        .btn-mercado:hover {
-            background-color: #56388e;
-            color: white;
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
         }
-        
-        footer {
-            background-color: #ae7c9f;
-            color: white;
-            padding: 2rem 0;
-            margin-top: 3rem;
+        .navbar-nav .nav-link.active {
+            color: #925f99;
+        }
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                padding-top: 1rem;
+            }
+            .navbar-nav .nav-item {
+                margin-bottom: 0.5rem;
+            }
+            .d-flex {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
         }
 
-/* Contenedor principal para centrar */
-.contenedor-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 76px); /* Altura total menos la altura de la navbar */
-    padding: 20px;
-    box-sizing: border-box;
-}
+        /* Contenedor principal para centrar */
+        .contenedor-principal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 76px);
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-/* Estilos del cuadro responsivo */
-.cuadro {
-    width: 100%;
-    max-width: 900px; /* Tamaño máximo en pantallas grandes */
-    aspect-ratio: 1 / 1; /* Mantener relación cuadrada */
-    background-color: #f3ccec;
-    box-shadow: 0 0 20px 5px #925f99;
-    border-radius: 8px; /* Bordes redondeados opcionales */
-}
+        /* Estilos del cuadro responsivo */
+        .cuadro {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #f3ccec;
+            box-shadow: 0 0 20px 5px #925f99;
+            border-radius: 12px;
+            padding: 30px;
+            overflow: auto;
+            max-height: 90vh;
+        }
+
+        /* Estilos para el contenido de Nosotros */
+        .nosotros-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #6a3c71;
+        }
+
+        .nosotros-header h1 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .nosotros-header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .nosotros-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .nosotros-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .nosotros-text h2 {
+            color: #6a3c71;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .nosotros-text p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .nosotros-image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nosotros-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-section {
+            margin-top: 40px;
+        }
+
+        .team-section h2 {
+            text-align: center;
+            color: #6a3c71;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .team-member {
+            width: 180px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #925f99;
+            margin-bottom: 15px;
+        }
+
+        .team-member h4 {
+            margin: 10px 0 5px;
+            color: #6a3c71;
+        }
+
+        .team-member p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .values-section {
+            margin-top: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .values-section h2 {
+            text-align: center;
+            color: #6a3c71;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .value-card i {
+            font-size: 2.5rem;
+            color: #925f99;
+            margin-bottom: 15px;
+        }
+
+        .value-card h3 {
+            color: #6a3c71;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .cuadro {
+                padding: 20px;
+            }
+            
+            .nosotros-content {
+                flex-direction: column;
+            }
+            
+            .team-member {
+                width: 140px;
+            }
+            
+            .team-member img {
+                width: 100px;
+                height: 100px;
+            }
+        }
