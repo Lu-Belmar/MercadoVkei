@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -124,45 +124,53 @@
         </div>
     </div>
 
-    <script>
-        // Funciones para manejar la cantidad
-        function decreaseQuantity() {
-            const quantityInput = document.getElementById('quantity');
-            if (parseInt(quantityInput.value) > 1) {
-                quantityInput.value = parseInt(quantityInput.value) - 1;
-            }
+<script>
+    // Funciones para manejar la cantidad
+    function decreaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        if (parseInt(quantityInput.value) > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
         }
-        
-        function increaseQuantity() {
-            const quantityInput = document.getElementById('quantity');
-            if (parseInt(quantityInput.value) < 10) {
-                quantityInput.value = parseInt(quantityInput.value) + 1;
-            }
-        }
-        
-        // Función para añadir al carrito
-        function addToCart() {
-            const quantity = document.getElementById('quantity').value;
-            const sizeSelect = document.getElementById('size-select');
-            const size = sizeSelect.value;
-            
-            if (!size) {
-                alert('Por favor, selecciona una talla antes de añadir al carrito.');
-                sizeSelect.focus();
-                return;
-            }
-            
-            alert(`¡Añadido al carrito!\nProducto: Vestido Gothic Lolita Listado\nTalla: ${size}\nCantidad: ${quantity}`);
-            // Aquí iría la lógica real para añadir al carrito
-        }
-        
-        // Validación para que la cantidad no sea menor que 1 ni mayor que 10
-        document.getElementById('quantity').addEventListener('change', function() {
-            if (this.value < 1) this.value = 1;
-            if (this.value > 10) this.value = 10;
-        });
-    </script>
+    }
 
+    function increaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        if (parseInt(quantityInput.value) < 10) {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+    }
+
+    // NUEVA función para añadir al carrito, conectada con carrito.js
+    function addToCart() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const sizeSelect = document.getElementById('size-select');
+        const size = sizeSelect.value;
+
+        if (!size) {
+            alert('Por favor, selecciona una talla antes de añadir al carrito.');
+            sizeSelect.focus();
+            return;
+        }
+
+        // Crear producto para enviar al carrito
+        const producto = {
+            id: `vestido-gothic-${size}`, // ID único por talla
+            nombre: `Vestido Gothic Lolita (${size})`,
+            precio: 49990,
+            imagen: "https://statics.devilinspired.com/image/cache/2024/1224/0/2e53bcc0-d5f1-a211-dc6c-955e78f93b9c-750x1000.jpg",
+            cantidad: quantity
+        };
+
+        añadirAlCarrito(producto); // función de carrito.js
+    }
+
+    // Validar que cantidad esté entre 1 y 10
+    document.getElementById('quantity').addEventListener('change', function() {
+        if (this.value < 1) this.value = 1;
+        if (this.value > 10) this.value = 10;
+    });
+</script>
+    <script src="carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

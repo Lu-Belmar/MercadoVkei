@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestido Gothic Lolita Listado - MercadoVkei</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://images.squarespace-cdn.com/content/v1/618e7f223fb749481d23c9c1/8ad0b113-c63a-4db9-809a-4c3eb51122ba/foto+logo.jpg" 
+                     width="30" height="30" alt="Logo" class="d-inline-block align-text-top">
+                MercadoVkei
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="blog1.html">Noticia 1</a></li>
+                            <li><a class="dropdown-item" href="blog2.html">Noticia 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="d-flex">
+                    <a href="ingresar.html" class="btn btn-outline-success me-2 btn-sign-in">Ingresar</a>
+                    <a href="registrarse.html" class="btn btn-outline-primary btn-register">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="product-detail-container">
+        <a href="productos.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Volver a productos
+        </a>
+        
+        <div class="product-detail-card">
+            <div class="product-detail-main">
+                <div class="product-detail-image">
+                    <img src="https://statics.devilinspired.com/image/cache/2024/1224/0/2e53bcc0-d5f1-a211-dc6c-955e78f93b9c-750x1000.jpg" 
+                         alt="Vestido Gothic Lolita Listado">
+                </div>
+                
+                <div class="product-detail-info">
+                    <h1 class="product-detail-title">Vestido Gothic Lolita Listado</h1>
+                    <p class="product-price">$49.990</p>
+                    
+                    <div class="product-detail-description">
+                        <p>Este impresionante vestido Gothic Lolita presenta un diseño a rayas en tonos grises con detalles en encaje y alas de murciélago incorporadas. Perfecto para quienes buscan un estilo visual kei auténtico y llamativo.</p>
+                        <p>El vestido cuenta con corsé trasero ajustable, mangas abullonadas y volantes detallados que crean una silueta dramática y elegante típica de la moda japonesa.</p>
+                    </div>
+                    
+                    <div class="product-detail-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Talla:</span>
+                            <span class="spec-value">
+                                <select id="size-select" class="form-select" style="width: 200px;">
+                                    <option value="">Selecciona tu talla</option>
+                                    <option value="S">Small (S)</option>
+                                    <option value="M">Medium (M)</option>
+                                    <option value="L">Large (L)</option>
+                                    <option value="XL">Extra Large (XL)</option>
+                                </select>
+                            </span>
+                        </div>
+                        
+                        <div class="spec-item">
+                            <span class="spec-label">Material:</span>
+                            <span class="spec-value">Poliéster de alta calidad, encaje y detalles en satén</span>
+                        </div>
+                        
+                        <div class="spec-item">
+                            <span class="spec-label">Color:</span>
+                            <span class="spec-value">Gris con rayas negras</span>
+                        </div>
+                        
+                        <div class="spec-item">
+                            <span class="spec-label">Disponibilidad:</span>
+                            <span class="spec-value" style="color: #28a745;">En stock</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <span style="margin-right: 15px; font-weight: 600;">Cantidad:</span>
+                        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                        <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="10">
+                        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                    
+                    <button class="add-to-cart-btn" onclick="addToCart()">
+                        <i class="fas fa-shopping-cart"></i> Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Funciones para manejar la cantidad
+    function decreaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        if (parseInt(quantityInput.value) > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+    }
+
+    function increaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        if (parseInt(quantityInput.value) < 10) {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+    }
+
+    // NUEVA función para añadir al carrito, conectada con carrito.js
+    function addToCart() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        const sizeSelect = document.getElementById('size-select');
+        const size = sizeSelect.value;
+
+        if (!size) {
+            alert('Por favor, selecciona una talla antes de añadir al carrito.');
+            sizeSelect.focus();
+            return;
+        }
+
+        // Crear producto para enviar al carrito
+        const producto = {
+            id: `vestido-gothic-${size}`, // ID único por talla
+            nombre: `Vestido Gothic Lolita (${size})`,
+            precio: 49990,
+            imagen: "https://statics.devilinspired.com/image/cache/2024/1224/0/2e53bcc0-d5f1-a211-dc6c-955e78f93b9c-750x1000.jpg",
+            cantidad: quantity
+        };
+
+        añadirAlCarrito(producto); // función de carrito.js
+    }
+
+    // Validar que cantidad esté entre 1 y 10
+    document.getElementById('quantity').addEventListener('change', function() {
+        if (this.value < 1) this.value = 1;
+        if (this.value > 10) this.value = 10;
+    });
+</script>
+    <script src="carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
