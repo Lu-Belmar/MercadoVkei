@@ -339,14 +339,14 @@ footer {
   overflow: hidden;
   margin-bottom: 30px;
 }
-/* Capa oscura semi-transparente encima de la imagen */
+/* Capa  semi-transparente  */
 .header-con-imagen .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.4); /* opacidad ajustable */
+  background-color: rgba(0,0,0,0.4); 
   z-index: 1;}
 
 
@@ -367,7 +367,7 @@ footer {
   font-size: 1.1rem;
 }
 
-/* Hero Intro con imagen de fondo */
+/* imagen de fondo */
 .hero-intro {
   position: relative;
   height: 70vh;
@@ -448,7 +448,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: inherit;
     display: block;
     position: relative;
-    z-index: 1; /* Valor menor que el overlay */
+    z-index: 1; 
 }
 
 .product-link:hover {
@@ -499,7 +499,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px;
     transform: translateY(100%);
     transition: transform 0.3s ease;
-    z-index: 20; /* Mayor que el product-link */
+    z-index: 20; 
     cursor: pointer;
 }
 

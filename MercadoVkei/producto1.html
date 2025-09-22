@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Navbar -->
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -58,7 +58,7 @@
         </div>
     </nav>
 
-    <!-- Contenido principal -->
+    
     <div class="product-detail-container">
         <a href="productos.html" class="back-link">
             <i class="fas fa-arrow-left"></i> Volver a productos
@@ -141,7 +141,7 @@
         }
     }
 
-    // NUEVA función para añadir al carrito, conectada con carrito.js
+    // función para añadir al carrito
     function addToCart() {
         const quantity = parseInt(document.getElementById('quantity').value);
         const sizeSelect = document.getElementById('size-select');
@@ -162,10 +162,10 @@
             cantidad: quantity
         };
 
-        añadirAlCarrito(producto); // función de carrito.js
+        añadirAlCarrito(producto); // función carrito
     }
 
-    // Validar que cantidad esté entre 1 y 10
+    // Validar cantidad 
     document.getElementById('quantity').addEventListener('change', function() {
         if (this.value < 1) this.value = 1;
         if (this.value > 10) this.value = 10;
