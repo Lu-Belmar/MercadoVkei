@@ -67,9 +67,33 @@
         <div class="product-detail-card">
             <div class="product-detail-main">
                 <div class="product-detail-image">
-                    <img src="https://statics.devilinspired.com/image/cache/2024/1224/0/2e53bcc0-d5f1-a211-dc6c-955e78f93b9c-750x1000.jpg" 
-                         alt="Vestido Gothic Lolita Listado">
+
+
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="https://statics.devilinspired.com/image/cache/2024/1224/0/2e53bcc0-d5f1-a211-dc6c-955e78f93b9c-750x1000.jpg">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="https://statics.devilinspired.com/image/cache/2024/1224/0/1da705eb-25e6-9af3-8b09-bdf6945b43bf-750x1000.jpg">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
                 </div>
+
                 
                 <div class="product-detail-info">
                     <h1 class="product-detail-title">Vestido Gothic Lolita Listado</h1>
@@ -101,7 +125,7 @@
                         
                         <div class="spec-item">
                             <span class="spec-label">Color:</span>
-                            <span class="spec-value">Gris con rayas negras</span>
+                            <span class="spec-value">Negro con listado gris</span>
                         </div>
                         
                         <div class="spec-item">
@@ -126,22 +150,6 @@
     </div>
 
 <script>
-    // Funciones para manejar la cantidad
-    function decreaseQuantity() {
-        const quantityInput = document.getElementById('quantity');
-        if (parseInt(quantityInput.value) > 1) {
-            quantityInput.value = parseInt(quantityInput.value) - 1;
-        }
-    }
-
-    function increaseQuantity() {
-        const quantityInput = document.getElementById('quantity');
-        if (parseInt(quantityInput.value) < 10) {
-            quantityInput.value = parseInt(quantityInput.value) + 1;
-        }
-    }
-
-    // función para añadir al carrito
     function addToCart() {
         const quantity = parseInt(document.getElementById('quantity').value);
         const sizeSelect = document.getElementById('size-select');
@@ -153,7 +161,7 @@
             return;
         }
 
-        // Crear producto para enviar al carrito
+        
         const producto = {
             id: `vestido-gothic-${size}`, // ID único por talla
             nombre: `Vestido Gothic Lolita (${size})`,
@@ -162,10 +170,8 @@
             cantidad: quantity
         };
 
-        añadirAlCarrito(producto); // función carrito
+        añadirAlCarrito(producto);
     }
-
-    // Validar cantidad 
     document.getElementById('quantity').addEventListener('change', function() {
         if (this.value < 1) this.value = 1;
         if (this.value > 10) this.value = 10;

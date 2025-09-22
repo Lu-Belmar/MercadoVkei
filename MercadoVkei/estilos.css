@@ -413,7 +413,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     margin-bottom: 40px;
     padding: 30px;
-    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    background: linear-gradient(135deg,#56388e 0%, #f3ccec 100%);
     color: white;
     border-radius: 10px;
     margin: 20px auto;
@@ -493,7 +493,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(44, 62, 80, 0.9);
+    background: #6b3d96e6;
     color: white;
     text-align: center;
     padding: 10px;
@@ -522,7 +522,7 @@ input[type=number]::-webkit-outer-spin-button {
 .product-price {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #e74c3c;
+    color: #a06fa7;
 }
 
 .view-details-btn {
@@ -609,7 +609,7 @@ input[type=number]::-webkit-outer-spin-button {
 .product-detail-price {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #e74c3c;
+    color: #a06fa7;
     margin-bottom: 20px;
 }
 
@@ -666,7 +666,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     width: 100%;
     padding: 15px;
-    background: #2c3e50;
+    background: #925f99;
     color: white;
     border: none;
     border-radius: 5px;
@@ -677,7 +677,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .add-to-cart-btn:hover {
-    background: #1a252f;
+    background: #56388e;
 }
 
 .back-link {
@@ -848,7 +848,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .subscribe-btn {
     padding: 12px 25px;
-    background: #2c3e50;
+    background: #925f99;
     color: white;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -858,7 +858,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .subscribe-btn:hover {
-    background: #1a252f;
+    background: #56388e;
 }
 
 @media (max-width: 768px) {
