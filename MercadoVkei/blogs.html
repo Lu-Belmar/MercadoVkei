@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="https://images.squarespace-cdn.com/content/v1/618e7f223fb749481d23c9c1/8ad0b113-c63a-4db9-809a-4c3eb51122ba/foto+logo.jpg" 
@@ -26,28 +25,37 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link active" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
                     </li>
                     
-                    <li class="nav-item">
-                        <a class="nav-link active" href="blog.html">Blog</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="blogs.html">Blog</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="blog1.html">Noticia 1</a></li>
+                            <li><a class="dropdown-item" href="blog2.html">Noticia 2</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Informacion adicional</a></li>
+                        </ul>
                     </li>
                 </ul>
                 
                 <div class="d-flex">
-                    <a href="ingresar.html" class="btn btn-outline-success me-2">Ingresar</a>
-                    <a href="registrarse.html" class="btn btn-outline-primary">Register</a>
+                    <a href="ingresar.html" class="btn btn-outline-success me-2 btn-sign-in">Ingresar</a>
+                    <a href="registrarse.html" class="btn btn-outline-primary btn-register">Register</a>
                 </div>
             </div>
         </div>
     </nav>
-
 
     <div class="blogs-banner">
         <div class="container">
@@ -64,7 +72,7 @@
                 <img src="https://www.mapascompass.cl/cdn/shop/files/Stgo_2_1400x.jpg?v=1684442431" alt="Tendencias Visual Kei 2024">
             </div>
             <div class="blog-content">
-                <div class="blog-date">15 Marzo, 2024</div>
+                <div class="blog-date">15 Marzo, 2025</div>
                 <h3 class="blog-title">Nueva Tienda en Santiago Centro</h3>
                 <p class="blog-excerpt">Estamos felices de anunciar la apertura de nuestra nueva tienda física en Santiago Centro. Aquí podrás encontrar todos nuestros productos de moda Visual Kei y accesorios japoneses en un espacio diseñado especialmente para los fanáticos de la cultura japonesa...</p>
                 <a href="blog1.html" class="blog-link">Leer más</a>
@@ -74,12 +82,12 @@
 
         <div class="blog-card">
             <div class="blog-image">
-                <img src="https://cdn.shopify.com/s/files/1/0255/4025/3002/articles/Blog_1200x1200.jpg" alt="Conciertos J-Rock 2024">
+                <img src="https://64.media.tumblr.com/190b005e962fa5abc6102119a7ee099c/tumblr_pjk9xwqADa1qa56e5o1_1280.jpg" alt="Conciertos J-Rock 2024">
             </div>
             <div class="blog-content">
-                <div class="blog-date">28 Febrero, 2024</div>
-                <h3 class="blog-title">Los conciertos de J-Rock más esperados del 2024</h3>
-                <p class="blog-excerpt">No te pierdas nuestra guía completa de las giras y conciertos de bandas de J-Rock para este año. Incluye fechas, lugares y cómo conseguir entradas para estos eventos exclusivos.</p>
+                <div class="blog-date">28 Febrero, 2025</div>
+                <h3 class="blog-title">Gran aceptacion en la comunidad</h3>
+                <p class="blog-excerpt">Desde la apertura de MercadoVkei hemos recibido una acogida increíble por parte de la comunidad. Cientos de clientes han confiado en nosotros y han compartido su entusiasmo por la moda Visual Kei, lo que nos motiva a seguir creciendo y mejorando cada día.</p>
                 <a href="blog2.html" class="blog-link">Leer más</a>
             </div>
         </div>
@@ -87,13 +95,13 @@
 
         <div class="blog-card">
             <div class="blog-image">
-                <img src="https://statics.devilinspired.com/image/upload/Devil_Inspired/2023-12-20/5e8b9c1a-6c5d-4a5a-9f5a-9c5b5e5b5e5b.jpg" alt="Historia Visual Kei">
+                <img src="https://live.staticflickr.com/7020/6545124259_686d5a23d1_z.jpg" alt="Historia Visual Kei">
             </div>
             <div class="blog-content">
-                <div class="blog-date">10 Enero, 2024</div>
-                <h3 class="blog-title">La evolución del Visual Kei: De los 90s a la actualidad</h3>
-                <p class="blog-excerpt">Un recorrido fascinante por la historia del Visual Kei, desde sus humildes comienzos hasta convertirse en un fenómeno global que influencia la moda en todo el mundo.</p>
-                <a href="blog3.html" class="blog-link">Leer más</a>
+                <div class="blog-date">10 Enero, 2025</div>
+                <h3 class="blog-title">Informacion adicional</h3>
+                <p class="blog-excerpt">Informacion adicional sobre nuestro negocio</p>
+                <a href="blog.html" class="blog-link">Leer más</a>
             </div>
         </div>
     </div>
