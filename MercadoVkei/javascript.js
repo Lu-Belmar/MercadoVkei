@@ -31,7 +31,6 @@ document.getElementById("nombre").addEventListener("keyup",()=>{
         document.getElementById("pRut").innerHTML = "Debe tener entre 9 digitos"
         document.getElementById("pRut").style.color = "red"
         document.getElementById("pRut").hidden = false
-        //corregir mas adelante
         document.getElementById("rut").classList.add("is-invalid")
         document.getElementById("rut").classList.remove("is-valid")
         saludar()
