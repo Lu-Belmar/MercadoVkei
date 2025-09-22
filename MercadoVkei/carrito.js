@@ -266,3 +266,18 @@ if (document.readyState === 'loading') {
 } else {
     inicializarCarrito();
 }
+
+
+function decreaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        if (parseInt(quantityInput.value) > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+    }
+
+    function increaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        if (parseInt(quantityInput.value) < 10) {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+    }

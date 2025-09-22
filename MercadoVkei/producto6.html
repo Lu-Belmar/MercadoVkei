@@ -67,17 +67,40 @@
         <div class="product-detail-card">
             <div class="product-detail-main">
                 <div class="product-detail-image">
-                    <img src="https://statics.devilinspired.com/image/cache/2024/1224/0/2e53bcc0-d5f1-a211-dc6c-955e78f93b9c-750x1000.jpg" 
-                         alt="Vestido Gothic Lolita Listado">
+
+
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="https://statics.devilinspired.com/image/cache/2025/0717/0/bf831f1e-6468-5abd-5641-ac69198c2eb1-750x1000.jpg">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="https://statics.devilinspired.com/image/cache/2025/0717/0/b9471d00-4371-4950-0d6d-e03ff625291b-750x1000.jpg">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
                 </div>
                 
                 <div class="product-detail-info">
-                    <h1 class="product-detail-title">Vestido Gothic Lolita Listado</h1>
-                    <p class="product-price">$49.990</p>
+                    <h1 class="product-detail-title">Lentes Decora</h1>
+                    <p class="product-price">$15.990</p>
                     
                     <div class="product-detail-description">
-                        <p>Este impresionante vestido Gothic Lolita presenta un diseño a rayas en tonos grises con detalles en encaje y alas de murciélago incorporadas. Perfecto para quienes buscan un estilo visual kei auténtico y llamativo.</p>
-                        <p>El vestido cuenta con corsé trasero ajustable, mangas abullonadas y volantes detallados que crean una silueta dramática y elegante típica de la moda japonesa.</p>
+                        <p>Nuevos Lentes Decora Dorados como nuevo accesorio para su look</p>
+                        <p>Estos lentes impulsan los colores de sus ojos, ademas de su gran calidad y durabilidad tienen la posibilidad de cambiar los lentes por aquellos de preescripcion</p>
                     </div>
                     
                     <div class="product-detail-specs">
@@ -86,22 +109,19 @@
                             <span class="spec-value">
                                 <select id="size-select" class="form-select" style="width: 200px;">
                                     <option value="">Selecciona tu talla</option>
-                                    <option value="S">Small (S)</option>
-                                    <option value="M">Medium (M)</option>
-                                    <option value="L">Large (L)</option>
-                                    <option value="XL">Extra Large (XL)</option>
+                                    <option value="TU">Talla Unica</option>
                                 </select>
                             </span>
                         </div>
                         
                         <div class="spec-item">
                             <span class="spec-label">Material:</span>
-                            <span class="spec-value">Poliéster de alta calidad, encaje y detalles en satén</span>
+                            <span class="spec-value">Metal Inoxidable, Vidrio, Aluminio</span>
                         </div>
                         
                         <div class="spec-item">
                             <span class="spec-label">Color:</span>
-                            <span class="spec-value">Gris con rayas negras</span>
+                            <span class="spec-value">Dorado</span>
                         </div>
                         
                         <div class="spec-item">
@@ -126,22 +146,6 @@
     </div>
 
 <script>
-    // Funciones para manejar la cantidad
-    function decreaseQuantity() {
-        const quantityInput = document.getElementById('quantity');
-        if (parseInt(quantityInput.value) > 1) {
-            quantityInput.value = parseInt(quantityInput.value) - 1;
-        }
-    }
-
-    function increaseQuantity() {
-        const quantityInput = document.getElementById('quantity');
-        if (parseInt(quantityInput.value) < 10) {
-            quantityInput.value = parseInt(quantityInput.value) + 1;
-        }
-    }
-
-    //  función para añadir al carrito, conectada con carrito.js
     function addToCart() {
         const quantity = parseInt(document.getElementById('quantity').value);
         const sizeSelect = document.getElementById('size-select');
@@ -153,19 +157,17 @@
             return;
         }
 
-        // Crear producto para enviar al carrito
         const producto = {
-            id: `vestido-gothic-${size}`, // ID único por talla
-            nombre: `Vestido Gothic Lolita (${size})`,
-            precio: 49990,
-            imagen: "https://statics.devilinspired.com/image/cache/2024/1224/0/2e53bcc0-d5f1-a211-dc6c-955e78f93b9c-750x1000.jpg",
+            id: `lentes-decora-${size}`,
+            nombre: `Lentes Decora (${size})`,
+            precio: 15990,
+            imagen: "https://statics.devilinspired.com/image/cache/2025/0717/0/bf831f1e-6468-5abd-5641-ac69198c2eb1-750x1000.jpg",
             cantidad: quantity
         };
 
-        añadirAlCarrito(producto); // función de carrito
+        añadirAlCarrito(producto); 
     }
 
-    // Validar que cantidad esté entre 1 y 10
     document.getElementById('quantity').addEventListener('change', function() {
         if (this.value < 1) this.value = 1;
         if (this.value > 10) this.value = 10;
