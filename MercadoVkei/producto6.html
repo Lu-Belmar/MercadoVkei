@@ -146,22 +146,6 @@
     </div>
 
 <script>
-    // Funciones para manejar la cantidad
-    function decreaseQuantity() {
-        const quantityInput = document.getElementById('quantity');
-        if (parseInt(quantityInput.value) > 1) {
-            quantityInput.value = parseInt(quantityInput.value) - 1;
-        }
-    }
-
-    function increaseQuantity() {
-        const quantityInput = document.getElementById('quantity');
-        if (parseInt(quantityInput.value) < 10) {
-            quantityInput.value = parseInt(quantityInput.value) + 1;
-        }
-    }
-
-    //  función para añadir al carrito, conectada con carrito.js
     function addToCart() {
         const quantity = parseInt(document.getElementById('quantity').value);
         const sizeSelect = document.getElementById('size-select');
@@ -173,19 +157,17 @@
             return;
         }
 
-        // Crear producto para enviar al carrito
         const producto = {
-            id: `lentes-decora-${size}`, // ID único por talla
+            id: `lentes-decora-${size}`,
             nombre: `Lentes Decora (${size})`,
             precio: 15990,
             imagen: "https://statics.devilinspired.com/image/cache/2025/0717/0/bf831f1e-6468-5abd-5641-ac69198c2eb1-750x1000.jpg",
             cantidad: quantity
         };
 
-        añadirAlCarrito(producto); // función de carrito
+        añadirAlCarrito(producto); 
     }
 
-    // Validar que cantidad esté entre 1 y 10
     document.getElementById('quantity').addEventListener('change', function() {
         if (this.value < 1) this.value = 1;
         if (this.value > 10) this.value = 10;
