@@ -710,7 +710,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*PAGINA DE REDIRECCION DE BLOGS*/
         
 .blogs-banner {
-    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    background: linear-gradient(135deg,#56388e 0%, #f3ccec 100%);
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -803,7 +803,7 @@ input[type=number]::-webkit-outer-spin-button {
 .blog-link {
     display: inline-block;
     padding: 10px 20px;
-    background: #2c3e50;
+    background: #925f99;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -813,7 +813,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .blog-link:hover {
-    background: #1a252f;
+    background: #56388e;
     color: white;
 }
 
